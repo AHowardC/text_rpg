@@ -33,7 +33,7 @@ for i in range(0,number_of_enemies):
 
 
 # we need to loop through all the monsters!
-for monster in monsters:
+for i,monster in enumerate(monsters):
 	# Run the game as long as BOTH characters have health (are alive)
 	while monster.is_alive() and the_hero.is_alive():
 		# game is on!
@@ -72,7 +72,13 @@ for monster in monsters:
 			# hero_health -= goblin_power
 			the_hero.take_damage(monster.power)
 
-			print "The goblin hits you for %d damage" % monster.power
+			print "The %s hits you for %d damage" % (monster.name, monster.power)
 			# goblin has attacked, now check to see if hero is still alive...
-			if the_hero.health <= 0:
+			if the_hero.is_alive():
 				print "You have been killed by the weak goblin. Shame on you."
+
+
+
+
+
+
