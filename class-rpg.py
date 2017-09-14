@@ -81,4 +81,3 @@ for i,monster in enumerate(monsters):
 
 
 
-

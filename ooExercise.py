@@ -20,11 +20,7 @@ class Person(object):
 		return len(self.friends)
 	def number_unique_people():
 		pass
-class ElectricCar(Vehicle):
-	def __init__(self, make, model, year, max_range, battery_size):
-		super(ElectricCar,self).__init__(make, model, year,0)
-		self.max_range = max_range
-		self.battery_size = battery_size
+
 		
 
 sonny = Person('Sonny','sonny@hotmail.com','483-485-4948')
@@ -48,21 +44,6 @@ sonny.friends.append(jordan)
 
 print sonny.email, sonny.phone
 print jordan.email, jordan.phone
-
-
-class Vehicle(object):
-	def __init__(self, model, make, year):
-		self.model = model
-		self.make = make
-		self.year = year
-		#super(Vehicle, self).__init__(model, make, year	self.arg = argmodel, make, year
-	def print_info(self):
-		print
-
-car = Vehicle('Nissan', 'Leaf', 2015)
-print car.make, car.model, car.year
-
-
 
 
 
