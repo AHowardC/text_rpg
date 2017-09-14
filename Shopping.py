@@ -2,7 +2,7 @@ class Shopping(object):
     # If you define a variable in the scope of a class:
     # This is a class variable and you can access it like
     # Shopping.items => [Tonic, Sword]
-    items = [Tonic, Sword]
+    items = [Tonic, Sword,SuperTonic]
     def do_shopping(self, hero):
         while True:
             print "====================="
@@ -35,6 +35,14 @@ class Sword(object):
     def apply(self, hero):
         hero.power += 2
         print "%s's power increased to %d." % (hero.name, hero.power)
+
+class SuperTonic(object):
+    cost = 7
+    name = 'supertonic'
+    def apply(self, character):
+        character.health += 10
+        print "%s's health increased to %d." % (character.name, character.health)
+
 hero = Hero()
 monsters = [Goblin(), Wizard()]
 battle_engine = Battle()

@@ -15,10 +15,10 @@ class Hero(Character):
         item.apply(hero)
 
 
-# class Medic(Character):
-#     def __init__(self):
-#         self.name = 'Medic'
-#         self.health = 10
-#         self.power = 5
-#         self.coins = 20
+class Medic(Character):
+    def __init__(self):
+        self.name = 'Medic'
+        self.health = 10
+        self.power = 5
+        self.coins = 20
         
