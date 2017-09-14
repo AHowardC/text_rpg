@@ -1,7 +1,9 @@
+from character import Character
+import time
 class Hero(Character):
     def __init__(self):
         self.name = 'hero'
-        self.health = 10
+        self.health = 15
         self.power = 5
         self.coins = 20
 
@@ -12,13 +14,7 @@ class Hero(Character):
 
     def buy(self, item):
         self.coins -= item.cost
-        item.apply(hero)
+        item.apply(self)
+    def cheer_for_hero(self, thing_to_print):
+        print thing_to_print
 
-
-class Medic(Character):
-    def __init__(self):
-        self.name = 'Medic'
-        self.health = 10
-        self.power = 5
-        self.coins = 20
-        

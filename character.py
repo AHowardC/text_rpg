@@ -1,9 +1,11 @@
+import time
+
 class Character(object):
-    def __init__(self):
-        self.name = '<undefined>'
-        self.health = 10
-        self.power = 5
-        self.coins = 20
+    def __init__(self,name,health,power,coins):
+        self.name = name
+        self.health = health
+        self.power = power
+        self.coins = coins
 
     def alive(self):
         return self.health > 0

@@ -1,3 +1,4 @@
+from character import Character
 class Wizard(Character):
     def __init__(self):
         self.name = 'wizard'
