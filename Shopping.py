@@ -21,6 +21,8 @@ class SuperTonic(object):
 	def apply(self, character):
 		character.health += 10
 		print "%s's health increased to %d." % (character.name, character.health)
+
+#buggy
 class Armor(object):
 	cost = 3
 	name = 'armor'
@@ -37,7 +39,7 @@ class Shopping(object):
 	# This is a class variable and you can access it like
 	# Shopping.items => [Tonic, Sword]
 
-	items = [Tonic, Sword, SuperTonic]
+	items = [Tonic, Sword, SuperTonic, Armor]
 	def do_shopping(self, hero):
 		while True:
 			print "====================="

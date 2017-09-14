@@ -7,7 +7,7 @@ class Hero(Character):
         self.power = 5
         self.coins = 20
         #trying to add armor attribute for hero and store
-        self.armor_points = 0
+        self.armor = 0
 
     def restore(self):
         self.health = 10
@@ -18,7 +18,7 @@ class Hero(Character):
         self.coins -= item.cost
         item.apply(self)
 
-    def armor_points(self, item):
+    def armor(self, item):
         self.coins -= item.cost
         item.apply(self)
 

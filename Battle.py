@@ -29,6 +29,7 @@ class Battle(object):
         if hero.alive():
             print "You defeated the %s" % enemy.name
             return True
+            #give the hero coins for winning the battle. 5 for the goblin and 6 for the wizard.
         else:
             print "YOU LOSE!"
             return False
