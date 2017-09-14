@@ -6,6 +6,7 @@ from Goblin import Goblin
 from Vampire import Vampire
 from wizard import Wizard
 from medic import Medic 
+from Shadow import Shadow
 from Battle import Battle
 from random import randint
 from Shopping import Shopping, Tonic, Sword, SuperTonic
@@ -23,17 +24,19 @@ monsters = []
 # Before the game starts, let's ask the hero for his or her name.
 print "What is thy name, brave adventurer?"
 the_hero.name = raw_input("> ")
-the_hero.cheer_for_hero("Keep going Hero!")
+the_hero.cheer_for_hero("Good Luck Hero!")
 
 print "How many monsters are you will to fight, brave %s?" % the_hero.name
 number_of_enemies = int(raw_input("> "))
 
 for i in range(0,number_of_enemies):
-	rand_num = randint(0,1)
+	rand_num = randint(0,2)
 	if(rand_num == 1):
 		monsters.append(Goblin())
 	else:
 		monsters.append(Vampire())
+	# else:
+	# 	monsters.append(Wizard())
 
 
 # we need to loop through all the monsters!

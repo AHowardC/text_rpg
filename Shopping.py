@@ -21,6 +21,12 @@ class SuperTonic(object):
 	def apply(self, character):
 		character.health += 10
 		print "%s's health increased to %d." % (character.name, character.health)
+class Armor(object):
+	cost = 3
+	name = 'armor'
+	def apply(self, character):
+		character.armor_points += 2
+		print "%s's health increased to %d." % (character.name, character.health)
 
 
 
