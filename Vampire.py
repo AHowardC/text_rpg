@@ -9,3 +9,4 @@ class Vampire(object):
 		return self.health
 	def is_alive(self):
 		return self.health > 0
+#new character
